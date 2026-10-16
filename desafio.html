@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Herói das Chamas</title>
+</head>
+<body>
+
+    <h1>Herói das Chamas</h1>
+    <p><strong>Objetivo:</strong> Você é um bravo bombeiro. Sua missão é navegar pela casa em chamas e encontrar a pessoa que está presa em um dos cômodos!</p>
+    <hr>
+
+
+    <div id="rua">
+        <h2>Local Atual: Rua (Frente da Casa)</h2>
+        <p>Depressa! Você está na rua, em frente à casa em chamas. O que você faz?</p>
+        <ul>
+            <li><a href="#sala">Entrar pela porta principal</a></li>
+            <li><a href="#quarto1">Entrar pela janela</a></li>
+        </ul>
+    </div>
+
+  
+    <div id="sala" style="margin-top: 500px;">
+        <h2>Local Atual: Sala</h2>
+        <p>Você está na Sala. Para onde deseja ir?</p>
+        <ul>
+            <li><a href="#rua">Sair pela porta da frente (Rua)</a></li>
+            <li><a href="#quarto1">Atravessar a porta para o Quarto</a></li>
+            <li><a href="#corredor">Ir para o Corredor</a></li>
+        </ul>
+    </div>
+
+    
+    <div id="quarto1" style="margin-top: 500px;">
+        <h2>Local Atual: Quarto de Entrada</h2>
+        <p>Você está no Quarto próximo à entrada. Para onde deseja ir?</p>
+        <ul>
+            <li><a href="#rua">Pular a janela para a Rua</a></li>
+            <li><a href="#sala">Atravessar a porta para a Sala</a></li>
+        </ul>
+    </div>
+
+    <div id="corredor" style="margin-top: 500px;">
+        <h2>Local Atual: Corredor</h2>
+        <p>Você está no Corredor lateral. Para onde deseja ir?</p>
+        <ul>
+            <li><a href="#sala">Voltar para a Sala</a></li>
+            <li><a href="#cozinha">Avançar para a Cozinha</a></li>
+        </ul>
+    </div>
+
+  
+    <div id="cozinha" style="margin-top: 500px;">
+        <h2>Local Atual: Cozinha</h2>
+        <p>Você está na Cozinha nos fundos da casa. Para onde deseja ir?</p>
+        <ul>
+            <li><a href="#corredor">Voltar para o Corredor</a></li>
+            <li><a href="#quarto_alvo">Entrar pela porta da esquerda (Quarto)</a></li>
+            <li><a href="#banheiro">Entrar pela porta da direita (Banheiro)</a></li>
+        </ul>
+    </div>
+
+
+    <div id="banheiro" style="margin-top: 500px;">
+        <h2>Local Atual: Banheiro</h2>
+        <p>Você está no Banheiro. Para onde deseja ir?</p>
+        <ul>
+            <li><a href="#cozinha">Sair pela porta para a Cozinha</a></li>
+        </ul>
+    </div>
+
+    
+    <div id="quarto_alvo" style="margin-top: 500px;">
+        <h2>VITÓRIA!</h2>
+        <p><strong>Você encontrou a pessoa no Quarto Principal!</strong></p>
+        <p>Missão cumprida com sucesso! Você conseguiu resgatar a vítima e concluiu o jogo.</p>
+        <br>
+        <a href="#rua">Jogar Novamente</a>
+    </div>
+
+</body>
+</html>
